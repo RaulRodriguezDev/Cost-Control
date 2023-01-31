@@ -3,9 +3,17 @@ import Header from './Components/Header'
 
 function App() {
 
+  const[budget, setBudget] = useState(0)
+  const [isValidBudget, setIsValidBudget] = useState(false)
+
   return ( 
     <div>
-      <Header/>
+      <Header 
+        budget={budget} 
+        setBudget={setBudget}
+        isValidBudget={isValidBudget}
+        setIsValidBudget={setIsValidBudget}
+        />
     </div>
    )
 }
